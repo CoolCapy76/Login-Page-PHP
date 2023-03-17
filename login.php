@@ -2,11 +2,11 @@
 
 session_start();
 
-include "db_conn.php";
+include('db_conn.php');
 
 if (isset($_POST['uname']) && isset($_POST['password'])) {
 
-    function validate($data){
+    function validate ($data){
 
         $data = trim($data);
 
@@ -36,7 +36,8 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
     }else{
 
-        $sql = "SELECT * FROM users WHERE Username='$uname' AND Password='$pass'";
+
+        $sql = "SELECT * FROM users1 WHERE Username='$uname' AND Password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
