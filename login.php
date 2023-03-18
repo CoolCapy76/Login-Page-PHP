@@ -2,7 +2,7 @@
 
 session_start();
 
-include('db_conn.php');
+include("C:/Users/veselin/Desktop/Web projects/Login/db_conn.php");
 
 if (isset($_POST['uname']) && isset($_POST['password'])) {
 
